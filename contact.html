@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <title>My Contact</title>
+    </head>
+    <body>
+        <div class="header-container">
+            <header>
+                <a href="index.html"><img src="img/T2_Jhe-logo.png" alt="logo"></a>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="project.html">Project</a>
+                        <ul>
+                            <li><a href="personal-project.html">Personal Project</a></li>
+                            <li><a href="client-project.html">Client Project</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <div class="contact">
+                <h1>Contact Me</h1>
+                <p>Feel free to reach out with any questions or opportunities.</p>
+            </div>
+            <div class="form-container">
+                <form action="process_contact_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required autocomplete="on">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required autocomplete="on">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Write your message. . . ."></textarea>
+                    <div class="button-alt">
+                        <button type="submit">Submit</button>
+                        <p class="alt-email">Alternatively, you can reach me via email at <span><a href="jmdcastro44@gmail.com">jmdcastro44@gmail.com</a></span>.</p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="socmed-icon">
+                <p>Connect with me on social media:</p>
+                <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://tiktok.com/@t2_jhe44?_t8hPWrUqGWYM&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="ty">
+                <p>Thank you for reaching out. I'll get back to you as soon as possible!</p>
+            </div>
+
+        </main>
+        <footer>
+            <div class="copyright">
+                <p>&copy; 2023 <a href="about.html">T2_Jhe</a>. All rights reserved</p>
+            </div>
+            <div class="soc-icon">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li> 
+                </ul>
+            </div>
+        </footer>       
+        
+    </body>
+</html>

@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-image: url('../img/109330.jpg');
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.85));
+    z-index: -1;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 10em;
+    background-color: black;
+    height: 4em;
+}
+
+header img {
+    max-width: 55%;
+    height: auto;
+    padding-top: 5%;
+}
+
+ul{
+    display: flex;
+    list-style:  none;
+    width: 100%;
+ 
+}
+
+ul li {
+    position: relative;
+}
+
+ul li ul {
+    position: absolute;
+    left: -35%;
+    width: 180px;
+    margin-top: 30px;
+    flex-direction: column;
+    display: none;
+}
+
+ul li:hover ul {
+    margin-top: 0;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 300ms;
+    border: 2px solid transparent;
+    box-sizing: border-box;    
+    border-radius: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+nav a:hover {
+    color: #FFBD59;
+    background-color: rgb(29, 28, 28);
+    border: 2px solid #FFBD59;
+    font-size: 21px;
+}
+
+nav a:active {
+    color: #FFBD59;
+    background-color: rgb(29, 28, 28);
+    border: 2px solid #FFBD59;
+    font-size: 18px;
+}
+
+nav li.active a{
+    color: #FFBD59;
+}
+main {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    flex: 1;
+}
+
+h1 {
+    font-size: 70px;
+    margin: auto;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p{
+    font-size: 18px;
+    margin: auto;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 700px;
+    margin: 10px auto;
+    padding-top: 20px;
+  
+}
+
+.form-container form{
+    width: 100%;
+}
+
+.form-container label,
+.form-container input,
+.form-container textarea,
+.form-container button {
+    margin-bottom: 10px; 
+    width: 100%; 
+}
+
+.form-container label {
+    display: block;
+}
+
+.form-container button {
+    background-color: transparent;
+    color: #FFBD59;
+    font-size: 18px;
+    padding: 10px 16px;
+    border: 2px solid #FFBD59;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: 300ms;
+}
+
+.form-container button:hover {
+    background-color: #FFBD59;
+    color: black;
+}
+
+.form-container input,
+.form-container textarea {
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+    background-color:transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.form-container textarea {
+    height: 200px;
+}
+
+.alt-email a {
+    text-decoration: none;
+    color: #FFBD59;
+    font-size: 20px;
+}
+
+.button-alt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-alt p {
+    padding-bottom: 12px;
+}
+
+.socmed-icon {
+    margin-top: 20px;
+}
+
+.socmed-icon a{
+    font-size: 50px;
+    margin-top: 20px;
+    padding: 10px;
+    transition: 300ms;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: 300ms;
+    border: 2px solid transparent;
+    box-sizing: border-box;    
+    border-radius: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.socmed-icon a:hover {
+    color: #FFBD59;
+    background-color: rgb(29, 28, 28);
+    border: 2px solid #FFBD59;
+    font-size: 51px;
+}
+
+.socmed-icon a:active {
+    color: #FFBD59;
+    background-color: rgb(29, 28, 28);
+    border: 2px solid #FFBD59;
+    font-size: 49px;
+}
+
+
+.ty {
+    margin: 20px 0 50px;
+    padding: 5px;
+    font-size: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 12em;
+    background-color: black;
+    height: 4em;
+    color: white;
+
+}
+
+.copyright {
+    font-size: 14px;
+    padding-left: 50px;
+}
+
+.nav-bar a{
+    font-size: 16px;
+    transition: 300ms;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 300ms;
+    border: 2px solid transparent;
+    box-sizing: border-box;    
+    border-radius: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.nav-bar a:hover {
+    color: #FFBD59;
+    background-color: rgb(29, 28, 28);
+    border: 2px solid #FFBD59;
+    font-size: 17px;
+}
+
+.nav-bar a:active {
+    color: #FFBD59;
+    background-color: rgb(29, 28, 28);
+    border: 2px solid #FFBD59;
+    font-size: 16px;
+}
+
+.soc-icon a {
+    font-size: 26px;
+    transition: 300ms;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 300ms;
+    border: 2px solid transparent;
+    box-sizing: border-box;    
+    border-radius: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.soc-icon a:hover {
+    color: #FFBD59;
+    background-color: rgb(29, 28, 28);
+    border: 2px solid #FFBD59;
+    font-size: 27px;
+}
+
+.soc-icon a:active {
+    color: #FFBD59;
+    background-color: rgb(29, 28, 28);
+    border: 2px solid #FFBD59;
+    font-size: 26px;
+}
+
+.copyright p a{
+    text-decoration: none;
+    color: #FFBD59;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 0.5em 1em; /* Adjust padding for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    
+    }
+
+    nav img {
+    
+    }
+
+    nav li ul {
+        left: 0; /* Adjust the position of the sub-menu */
+    }
+
+    nav a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .form-container {
+        width: 90%; /* Adjust form container width */
+    }
+
+    footer {
+        padding: 0.5em 1em;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+    }
+
+}
